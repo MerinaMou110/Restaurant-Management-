@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item li a {
+  list-style-type: none;
+}
+
+
+.menu-image { width: 100%; height: 200px; object-fit: cover; }
+.navbar-button {
+  background-color: #4A90E2;
+  color: white;
+}
+.navbar-button:hover {
+  background-color: #357ABD;
+}
+
+.banner {
+  background-image: url('https://img.freepik.com/free-photo/various-vegetables-black-table-with-space-message_1220-616.jpg?t=st=1717425518~exp=1717429118~hmac=ac2053b4fe44bcc7bec87dc18164e49dbf3f524818a6409702f59058ae33df1a&w=900');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}

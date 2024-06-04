@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+   <!-- Responsive Navbar -->
+   <div class="lg:hidden bg-gray-800 text-white p-4">
+    <nav>
+        <button class="p-4" id="toggler">
+            <img height="20px" width="20px" src="images/menu.png" alt="menu button" />
+        </button>
+    </nav>
+</div>
+<header id="sidebar" class="bg-gray-800 text-white p-6 shadow-lg lg:block hidden">
+    <div class="container mx-auto flex flex-col lg:flex-row justify-between items-center">
+        <h1 class="text-3xl font-bold mb-4 lg:mb-0">Quik Chicken</h1>
+        <nav>
+            <ul id="nav-items" class="nav-item flex flex-col lg:flex-row lg:space-x-6 space-y-4 lg:space-y-0">
+                <li><a href="index.html" class="hover:text-blue-600">Home</a></li>
+                <li><a href="menu.html" class="hover:text-blue-600">Menu</a></li>
+                <li><a href="reservation.html" class="hover:text-blue-600">Reservations</a></li>
+                <li><a href="contact.html" class="hover:text-blue-600">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+    <main class="p-6">
+        <section class="max-w-5xl mx-auto bg-white p-8 shadow-lg rounded-lg">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center">Contact Us</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Our Location</h3>
+                    <p class="text-gray-700 mb-2"><strong>Address:</strong> 123 Main Street, Khulna, Bangladesh</p>
+                    <p class="text-gray-700 mb-2"><strong>Phone:</strong> +880 123-456-7890</p>
+                    <p class="text-gray-700 mb-2"><strong>Email:</strong> info@restaurant.com</p>
+                    <div class="mt-6">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3647.927383609015!2d89.56614537423532!3d22.813206679483134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ff9f1d6eacb8eb%3A0x8e41f5b5c9e5e6b6!2sKhulna%2C%20Bangladesh!5e0!3m2!1sen!2sus!4v1620195617902!5m2!1sen!2sus"
+                            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Get in Touch</h3>
+                    <form id="contact-form">
+                        <div class="mb-4">
+                            <label for="name" class="block text-gray-700">Name</label>
+                            <input type="text" id="name" name="name" class="w-full p-2 border border-gray-300 rounded mt-1" placeholder="Enter Your Name" required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="email" class="block text-gray-700">Email</label>
+                            <input type="email" id="email" name="email" class="w-full p-2 border border-gray-300 rounded mt-1" placeholder="Enter Your Email" required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="message" class="block text-gray-700">Message</label>
+                            <textarea id="message" name="message" class="w-full p-2 border border-gray-300 rounded mt-1" rows="4" placeholder="Your message" required></textarea>
+                        </div>
+                        <button type="submit" class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+ <!-- Footer -->
+ <footer class="bg-gray-900 py-16">
+    <div class="container mx-auto text-center text-white">
+        <h1 class="text-3xl text-red-600 mb-4">Quik Chicken</h1>
+        <p class="mb-4">Experience the best dining with our delicious meals and exceptional service.</p>
+        <div class="flex justify-center space-x-6 mb-6">
+            <a href="index.html" class="hover:text-red-600">Home</a>
+            <a href="menu.html" class="hover:text-red-600">Menu</a>
+            <a href="reservation.html" class="hover:text-red-600">Reservations</a>
+            <a href="contact.html" class="hover:text-red-600">Contact</a>
+        </div>
+        <div class="flex justify-center space-x-4">
+            <a href="#" class="text-gray-500 hover:text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.566-2.005.978-3.127 1.199-.897-.957-2.178-1.555-3.594-1.555-2.719 0-4.92 2.201-4.92 4.917 0 .385.045.76.127 1.12-4.088-.205-7.719-2.165-10.148-5.144-.424.729-.667 1.577-.667 2.483 0 1.71.869 3.216 2.188 4.099-.806-.025-1.566-.247-2.228-.617v.061c0 2.386 1.699 4.376 3.95 4.827-.413.111-.848.171-1.296.171-.317 0-.626-.031-.927-.088.631 1.956 2.445 3.377 4.6 3.416-1.685 1.32-3.809 2.106-6.102 2.106-.396 0-.786-.023-1.17-.069 2.178 1.397 4.768 2.214 7.548 2.214 9.056 0 14.009-7.514 14.009-14.009 0-.213-.005-.426-.014-.637.961-.694 1.797-1.562 2.457-2.549z"/>
+                </svg>
+            </a>
+            <a href="#" class="text-gray-500 hover:text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M19.615 3.184c-1.72-.03-2.217.123-3.765.19-1.742.078-2.901-.294-4.573-.326-2.219-.038-3.926.847-5.528 2.207-1.738 1.487-2.94 3.69-2.998 6.059-.066 2.654.785 4.834 2.152 6.38 1.404 1.589 3.291 2.483 5.664 2.535 1.752.039 2.382-.098 3.869-.207 1.566-.114 2.611.354 4.46.291 2.238-.071 4.086-1.059 5.453-2.52 1.441-1.557 2.082-3.47 2.115-5.794.038-2.641-.833-4.748-2.256-6.205-1.304-1.347-3.056-2.055-5.199-2.096zm-6.674 13.689c-.053 0-.107-.002-.16-.005-.299-.012-.498-.074-.692-.201-.137-.089-.258-.218-.37-.384-.151-.225-.272-.482-.364-.766-.187-.584-.25-1.35-.196-2.268.039-.692.135-1.272.283-1.737.097-.306.204-.57.318-.79.14-.271.293-.505.457-.704.146-.178.302-.32.47-.425.15-.092.316-.158.49-.195.156-.035.33-.048.516-.037.278.015.496.071.681.177.135.076.264.18.386.314.147.168.273.372.373.611.186.434.269.944.248 1.526-.015.46-.105.867-.269 1.21-.107.23-.23.431-.368.6-.133.164-.285.297-.451.398-.15.091-.317.157-.489.198-.146.036-.304.055-.469.055zm-4.346-.007c-.17 0-.328-.012-.474-.036-.257-.043-.477-.125-.662-.245-.133-.085-.252-.197-.359-.334-.132-.175-.235-.378-.31-.609-.124-.386-.177-.878-.157-1.462.027-.777.134-1.404.318-1.865.157-.398.35-.718.578-.963.165-.177.344-.318.537-.422.144-.076.303-.133.473-.166.184-.035.387-.045.605-.027.266.021.489.09.677.203.135.078.262.184.377.314.14.156.253.348.335.576.158.43.217.995.179 1.674-.023.447-.117.837-.283 1.157-.113.227-.242.426-.384.595-.142.166-.305.303-.483.408-.15.091-.322.155-.506.19-.17.033-.353.049-.544.049zm8.353-6.459h-1.357v-1.359c0-.086-.03-.16-.087-.216-.059-.06-.134-.09-.219-.09h-.631c-.086 0-.161.03-.219.09-.059.059-.087.134-.087.216v1.359h-1.359c-.086 0-.161.029-.219.087-.059.058-.087.133-.087.219v.631c0 .085.03.16.087.219.058.058.133.087.219.087h1.359v1.358c0 .086.029.161.087.219.058.058.133.087.219.087h.631c.085 0 .16-.029.219-.087.058-.058.087-.133.087-.219v-1.358h1.357c.086 0 .161-.029.219-.087.059-.058.087-.133.087-.219v-.631c0-.086-.03-.161-.087-.219-.058-.058-.133-.087-.219-.087z"/>
+                </svg>
+            </a>
+            <a href="#" class="text-gray-500 hover:text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2.163c-5.429 0-9.837 4.408-9.837 9.837 0 5.429 4.408 9.837 9.837 9.837 5.429 0 9.837-4.408 9.837-9.837 0-5.429-4.408-9.837-9.837-9.837zm0 18.073c-4.543 0-8.236-3.694-8.236-8.236 0-4.543 3.694-8.236 8.236-8.236 4.543 0 8.236 3.694 8.236 8.236 0 4.543-3.694 8.236-8.236 8.236zm3.888-12.206h-.081c-.139 0-.272.012-.398.04-.257.055-.478.173-.681.367-.204.194-.355.443-.435.731-.063.21-.098.46-.101.74v.082c.004.284.038.531.101.74.08.288.231.537.435.731.204.193.424.311.681.367.127.028.259.04.398.04h.081c.311 0 .614-.081.88-.232.267-.151.497-.37.664-.645.158-.264.255-.564.255-.923 0-.359-.097-.658-.255-.923-.167-.274-.398-.494-.664-.645-.266-.151-.569-.232-.88-.232zm-3.246 1.449c-.083.171-.216.332-.393.471-.177.14-.384.247-.605.308-.104.029-.213.042-.325.04-.226-.003-.441-.047-.631-.122-.189-.075-.354-.182-.486-.308-.133-.126-.241-.266-.317-.417-.081-.162-.136-.337-.17-.523-.034-.186-.046-.38-.035-.581.011-.2.05-.396.116-.583.066-.187.154-.355.26-.495.112-.149.247-.282.405-.391.164-.113.346-.191.549-.23.104-.021.212-.032.321-.033.225 0 .442.043.636.123.194.08.36.192.494.326.134.134.24.292.314.465.079.187.131.386.158.597.02.158.028.317.026.475.001.168-.014.334-.048.5zm-4.186.127c.065.061.115.132.157.21.043.078.076.16.102.246.034.131.047.265.045.4-.003.134-.027.264-.075.384-.049.12-.117.231-.202.328-.085.097-.185.178-.298.241-.126.071-.258.12-.396.142-.138.021-.28.032-.422.032h-.081c-.31 0-.613-.081-.878-.232-.267-.151-.497-.37-.664-.645-.158-.264-.255-.564-.255-.923s.097-.658.255-.923c.167-.274.398-.494.664-.645.266-.151.569-.232.878-.232h.081c.141 0 .281.011.418.032.137.021.27.07.395.142.113.064.213.144.298.241.086.097.154.209.203.329.048.119.072.249.075.383.003.134-.011.268-.045.399-.026.086-.059.168-.102.246-.042.078-.092.148-.157.21z"/>
+                </svg>
+            </a>
+            <a href="#" class="text-gray-500 hover:text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M22.675 0h-21.35c-.734 0-1.325.591-1.325 1.325v21.351c0 .733.591 1.324 1.325 1.324h11.495v-9.294h-3.117v-3.622h3.117v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.462.098 2.792.143v3.237h-1.916c-1.502 0-1.792.715-1.792 1.764v2.315h3.587l-.467 3.622h-3.12v9.294h6.116c.733 0 1.324-.591 1.324-1.324v-21.35c0-.734-.591-1.325-1.324-1.325z"/>
+                </svg>
+            </a>
+        </div>
+        <p class="text-gray-500 mt-6">All rights reserved © 2024 Quik Chicken</p>
+    </div>
+</footer>
+<script>
+    document.getElementById('reservation-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        alert('Form submitted successfully!');
+    });
+</script>
+<script src="script.js"></script>
+</body>
+</html>
